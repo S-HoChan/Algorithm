@@ -12,6 +12,6 @@ import static java.lang.Math.pow;
 
 class Main {
     public static void main(String[] args) {
-       
+
     }
 }
