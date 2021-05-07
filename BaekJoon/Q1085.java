@@ -5,16 +5,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Q2839 {    // 설탕 배달
+public class Q1085 {    // 직사각형에서 탈출
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int n = Integer.parseInt(st.nextToken());
+        int x = Integer.parseInt(st.nextToken());
+        int y = Integer.parseInt(st.nextToken());
+        int w = Integer.parseInt(st.nextToken());
+        int h = Integer.parseInt(st.nextToken());
 
-        if (n == 4 || n == 7) System.out.println(-1);
-        else if (n % 5 == 0) System.out.println(n / 5);
-        else if (n % 5 == 1 || n % 5 == 3) System.out.println(n / 5 + 1);
-        else if (n % 5 == 2 || n % 5 == 4) System.out.println(n / 5 + 2);
+        System.out.println(Math.min(x, Math.min(y, Math.min(w - x, h - y))));
     }
 }
