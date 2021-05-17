@@ -13,12 +13,22 @@ public class Q13305 {   // 주유소
         int n = Integer.parseInt(st.nextToken());
         int[] distances = new int[n - 1];
         st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < n - 1; i++)
+        for (int i = 0; i < n - 1; i++){
             distances[i] = Integer.parseInt(st.nextToken());
+        }
 
         int[] costs = new int[n];
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++)
             costs[i] = Integer.parseInt(st.nextToken());
+
+        int minCost = costs[0];
+        long ans = 0;
+        for (int i = 0; i < n - 1; i++) {
+            minCost = Math.min(minCost, costs[i]);
+            ans += (long) distances[i] * minCost;
+        }
+
+        System.out.println(ans);
     }
 }
