@@ -7,8 +7,6 @@ class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        List<Integer> arr = new ArrayList<>();
-        arr.indexOf(1) = 1;
-        arr. = 1;
+        // 백신 후유증으로 인한 휴식
     }
 }
