@@ -7,6 +7,6 @@ class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        // 백신 후유증으로 인한 휴식
+
     }
 }
